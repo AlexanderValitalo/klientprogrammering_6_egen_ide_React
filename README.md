@@ -3,15 +3,15 @@
 ## Dokumentation
 
 ### Allmänt om mitt arbete
-- Denna applikation `BadgemaniaClient` är byggd med React, Next.JS och använder mitt egna REST API `BadgemaniaAPI` som jag byggt med ASP.NET
-- Applikationen använder sig av SPA (single page application) så den inte behöver ladda om då man går till olika "pages"
-- Med Next.JS så används server-side rendering och static site generation för att leverera sidor snabbt, vilket förbättrar användarupplevelsen och prestandan
-- Det ger även SEO-optimering då innehållet direkt blir tillgängligt för sökmotorer om sidan tas i produktion
-- Det blir bättre produktivitet med automatisk routing och hot reloading för utvecklingsprocessen
-- En annan fördel är hög skalbarhet
-- I mitt projekt har jag även använt TypeScript för att kunna ha typade variabler och lättare felsökning om något skulle gå fel
-- I mitt projekt har jag även använt mig utav Tailwindcss för att enklare kunna styla element och komponenter som jag vill
-- I mitt projekt har jag även använt mig utav EsLint för att hitta fel som kan uppstå i koden
+- Denna applikation `BadgemaniaClient` är byggd med React, Next.JS och använder mitt egna REST API `BadgemaniaAPI` som jag byggt med ASP.NET. API:et innehåller många fler endpoints än vad som används just nu av klienten men är förberett för kommande "fetcher" senare.
+- Applikationen använder sig av SPA (single page application) så den inte behöver ladda om då man går till olika "pages".
+- Med Next.JS så används server-side rendering och static site generation för att leverera sidor snabbt, vilket förbättrar användarupplevelsen och prestandan.
+- Det ger även SEO-optimering då innehållet direkt blir tillgängligt för sökmotorer om sidan tas i produktion.
+- Det blir bättre produktivitet med automatisk routing och hot reloading för utvecklingsprocessen.
+- En annan fördel är hög skalbarhet.
+- I mitt projekt har jag även använt TypeScript för att kunna ha typade variabler och lättare felsökning om något skulle gå fel.
+- I mitt projekt har jag även använt mig utav Tailwindcss för att enklare kunna styla element och komponenter som jag vill, samt för responsiv design.
+- I mitt projekt har jag även använt mig utav EsLint för att hitta fel som kan uppstå i koden.
 
 ### `Komponenter som används på flera ställen i min applikation`
 
