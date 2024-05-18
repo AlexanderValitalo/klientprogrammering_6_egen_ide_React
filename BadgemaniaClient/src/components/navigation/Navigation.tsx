@@ -31,11 +31,10 @@ export default function Navigation() {
         case "SuperAdmin":
           setLinks(SUPER_ADMIN_LINKS);
           break;
-        default:
-          setLinks(UN_AUTH_LINKS);
-          setIsAuthenticated(false);
-          break;
       }
+    } else {
+      setLinks(UN_AUTH_LINKS);
+      setIsAuthenticated(false);
     }
   }, []);
 
