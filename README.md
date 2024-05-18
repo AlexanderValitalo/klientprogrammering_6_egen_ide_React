@@ -60,7 +60,13 @@ Mappen about innehåller page.tsx filen. About page byggs upp med hjälp av stri
 Mappen contact innehåller page.tsx filen. Contact page byggs upp med hjälp av Navigation-komponenten som innehåller en main som i sin tur innehåller Header-komponenten följt av en div. Denna div innehåller en annan div som har 4 stycken p med contactinformation och uppmaning om att företaget gärna tar emot feedback. Den andra p innehåller även en mail-länk som i nuläget fungerar men inte är kopplad till en riktig mail för visning.
 
 #### Login page (/login)
-Mappen innehåller 2 filer där den ena är page.tsx och den andra är en komponent LoginForm.tsx som används på denna page. Denna sida innehåller i nuläget endast komponenten Navigation som innehåller en main och som i sin tur innehåller komponenten Header och en p som meddelar att sign in funktionen kommer bli tillgänglig i framtiden att använda.
+Mappen innehåller 2 filer där den ena är page.tsx och den andra är en komponent LoginForm.tsx som används på denna page. Denna sida innehåller även komponenten Header. På denna sidan kan användaren logga in genom att fylla i epost och lösenord och sedan trycka på Login-knappen. Om det är korrekt så loggas användaren in och kommer till home-sidan och ser att navbaren ändras med länkar till det som användarens roll har tillgång till samt att en logout-knapp finns istället för login-knapp. Matar användaren in fel så kommer ett meddelande fram och man får försöka igen. Man blir även meddeladd om ett fält är tomt när man trycker på Login-knappen.
+
+#### Badgegroups page (/badgegroups)
+Mappen innehåller 2 mappar och 4 filer. Mapparna är badgegroupId och create. Filerna är page.tsx, BadgegroupBtn.tsx, Badgegroups.tsx och CreateBadgegroupBtn.tsx. De 3 sistnämda är komponenter på denna page. På denna sidan så ser användaren sina badgegrupper som den tillhör. Är användaren en lärare så syns även en Create Badgegroup-knapp. Om användaren trycker på en grupp så kommer man till den gruppens sida (badgegroup/badgegroupId). Trycker användaren på Create Badgegroup-knappen så kommer man till badgegroups/create sidan.
+
+#### Create Badgegroup page (/badgegroups/create)
+Mappen innehåller 3 filer. Filerna är page.tsx, CreateBadgegroupForm och BackToBadgegroupsBtn som båda är komponenter på denna page. Här kan användaren skapa en ny badgegrupp genom att fylla i namnet på den nya gruppen och sedan trycka på Create Badgegroup-knappen. Om detta görs så kommer den nya badgegruppen att skapas och användaren blir skickad tillbaka till /badgegroups där alla badgegrupperna inklusive den nya syns. Om man inte matar in något meddelas dettao och man får försöka igen. Vill användaren gå tillbaka till /badgegroups kan man trycka på Back-knappen.
 
 ## `Hur startas applicationen`
 
