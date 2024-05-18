@@ -66,7 +66,15 @@ Mappen innehåller 2 filer där den ena är page.tsx och den andra är en kompon
 Mappen innehåller 2 mappar och 4 filer. Mapparna är badgegroupId och create. Filerna är page.tsx, BadgegroupBtn.tsx, Badgegroups.tsx och CreateBadgegroupBtn.tsx. De 3 sistnämda är komponenter på denna page. På denna sidan så ser användaren sina badgegrupper som den tillhör. Är användaren en lärare så syns även en Create Badgegroup-knapp. Om användaren trycker på en grupp så kommer man till den gruppens sida (badgegroup/badgegroupId). Trycker användaren på Create Badgegroup-knappen så kommer man till badgegroups/create sidan.
 
 #### Create Badgegroup page (/badgegroups/create)
-Mappen innehåller 3 filer. Filerna är page.tsx, CreateBadgegroupForm och BackToBadgegroupsBtn som båda är komponenter på denna page. Här kan användaren skapa en ny badgegrupp genom att fylla i namnet på den nya gruppen och sedan trycka på Create Badgegroup-knappen. Om detta görs så kommer den nya badgegruppen att skapas och användaren blir skickad tillbaka till /badgegroups där alla badgegrupperna inklusive den nya syns. Om man inte matar in något meddelas dettao och man får försöka igen. Vill användaren gå tillbaka till /badgegroups kan man trycka på Back-knappen.
+Mappen innehåller 3 filer. Filerna är page.tsx, CreateBadgegroupForm.tsx och BackToBadgegroupsBtn.tsx som båda är komponenter på denna page. Här kan användaren skapa en ny badgegrupp genom att fylla i namnet på den nya gruppen och sedan trycka på Create Badgegroup-knappen. Om detta görs så kommer den nya badgegruppen att skapas och användaren blir skickad tillbaka till /badgegroups där alla badgegrupperna inklusive den nya syns. Om man inte matar in något meddelas dettao och man får försöka igen. Vill användaren gå tillbaka till /badgegroups kan man trycka på Back-knappen.
+
+#### Badgegroup page (/badgegroups/[badgegroupsId])
+Mappen innehåller 3 mappar och 5 filer. Mapparna är studens, badgetypes och badges. Filerna är page.tsx, layout.tsx, BadgegroupSelectManager.tsx, BadgegroupHeader.tsx och BadgegroupContainer.tsx. De 3 sistnämda är komponenter som används i denna nestlade layouten för att kunna finnas med på de 3 följande sidorna också. Det är endast läraren som kan växla mellan dessa sidor. Just nu så är det endast en p-tag här men i framtiden så kommer användaren kunna se en dashboard som är olika beroende på om användaren är lärare eller elev.
+
+#### Students page (/badgegroups/[badgegroupsId]/students)
+Mappen innehåller 2 filer där den ena är page.tsx och den andra är StudentsInBadgegroup.tsx som är en komponent på denna page. Komponenten visar vilka elever som tillhör denna badgegroupen. Senare så ska läraren här även kunna lägga till och ta bort elever från gruppen.
+
+#### Badgetypes page
 
 ## `Hur startas applicationen`
 
