@@ -12,8 +12,6 @@ export function checkTimeLeft() {
   const currentTime = new Date();
   const expires = new Date(localStorage.expires);
 
-  console.log(currentTime.getTime(), expires.getTime());
-
   return currentTime.getTime() >= expires.getTime();
 }
 

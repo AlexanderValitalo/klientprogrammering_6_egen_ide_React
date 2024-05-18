@@ -39,7 +39,6 @@ export default function Refresher() {
     if (shouldRefresh) {
       fetchRefreshTokens();
     }
-    console.log(isFirstRun.current);
   }, [pathname, router]);
 
   return <></>;
