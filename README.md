@@ -80,6 +80,9 @@ Mappen innehåller för tillfället endas page.tsx. Här kommer läraren senare 
 #### Badges page (/badgegroups/[badgegroupsId]/badges)
 Mappen innehåller för tillfället endas page.tsx. Här kommer läraren senare att kunna se, lägga till, ändra och tabort badges. Nu är det endast en p-tag. 
 
+#### Schools page (/schools)
+Mappen innehåller för tillfället endas page.tsx. Här kommer senare super admin att kunna se, lägga till, ändra och tabort skolor. Nu är det endast en Header och en p-tag. 
+
 ## `Hur startas applicationen`
 
 ## `Reflektion och Analys`
