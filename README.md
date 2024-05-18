@@ -99,7 +99,7 @@ Mappen innehåller för tillfället endas page.tsx. Här kommer senare super adm
 ### `Frontend (BadgemaniaClient)`
 1. Öppna BadgemaniaClient-mappen i vscode.
 2. Om det är första gången så går man till terminalen och skriver `npm install` så installeras alla filer som behövs.
-3. När det är klart så skriver man `npm run dev` (se till att det körs på `https://localhost:3000` så backenden accepterar detta.
+3. När det är klart så skriver man `npm run dev` (se till att det körs på `https://localhost:3000` så backenden accepterar detta, detta ska vara installerat redan i mitt projekt så borde lösas automatiskt).
 4. Tryck ctrl och klicka på länken https://localhost:3000 i terminalen så öpnnas webbläsaren eller skriv in adressen själv i webbläsaren.
 
 ## `Reflektion och Analys`
