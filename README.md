@@ -74,7 +74,11 @@ Mappen innehåller 3 mappar och 5 filer. Mapparna är studens, badgetypes och ba
 #### Students page (/badgegroups/[badgegroupsId]/students)
 Mappen innehåller 2 filer där den ena är page.tsx och den andra är StudentsInBadgegroup.tsx som är en komponent på denna page. Komponenten visar vilka elever som tillhör denna badgegroupen. Senare så ska läraren här även kunna lägga till och ta bort elever från gruppen.
 
-#### Badgetypes page
+#### Badgetypes page (/badgegroups/[badgegroupsId]/badgetypes)
+Mappen innehåller för tillfället endas page.tsx. Här kommer läraren senare att kunna se, lägga till, ändra och tabort badgetypes. Nu är det endast en p-tag.
+
+#### Badges page (/badgegroups/[badgegroupsId]/badges)
+Mappen innehåller för tillfället endas page.tsx. Här kommer läraren senare att kunna se, lägga till, ändra och tabort badges. Nu är det endast en p-tag. 
 
 ## `Hur startas applicationen`
 
