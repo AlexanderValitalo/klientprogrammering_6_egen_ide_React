@@ -29,6 +29,14 @@ Navigation är en komponent som bygger upp alla NavigationLink:ar genom att ha i
 #### Refresher
 Refresher är en komponent som kollar om det är dags att göra en ny JWT-token (och ny Refresh-token) varje gång som användaren går till en ny page. Detta gör den genom utils/api och utils/auth. Om det är första renderingen så pushar vi om sidan för att se till så att navigeringen renderas rätt.
 
+### `Layouts` i applikationen
+
+#### Root Layouten
+Root Layouten använder Refresher och Navigation komponenterna utöver children propsen så att de finns i hela applikationen
+
+#### Layout i badgegroupId
+Layouten i badgegroupId används för att kunna ha en gemensam BadgegroupHeader och en BadgegroupContainer på sidorna badgegroupID, badgegroupID/students, badgegroupID/badgetypes och badgegroupID/badges då en lärare ska kunna växla mellan dessa utan behöva lägga in en BadgegroupHeader och en BadgegroupContainer på varje sida av dessa.
+
 ### `Sidor (pages) i applikationen`
 
 #### Home page (/)
@@ -51,8 +59,8 @@ Mappen about innehåller page.tsx filen. About page byggs upp med hjälp av stri
 #### Contact page (/contact)
 Mappen contact innehåller page.tsx filen. Contact page byggs upp med hjälp av Navigation-komponenten som innehåller en main som i sin tur innehåller Header-komponenten följt av en div. Denna div innehåller en annan div som har 4 stycken p med contactinformation och uppmaning om att företaget gärna tar emot feedback. Den andra p innehåller även en mail-länk som i nuläget fungerar men inte är kopplad till en riktig mail för visning.
 
-#### Sign in page (/sign-in)
-Mappen innehåller page.tsx. Denna sida innehåller i nuläget endast komponenten Navigation som innehåller en main och som i sin tur innehåller komponenten Header och en p som meddelar att sign in funktionen kommer bli tillgänglig i framtiden att använda.
+#### Login page (/login)
+Mappen innehåller 2 filer där den ena är page.tsx och den andra är en komponent LoginForm.tsx som används på denna page. Denna sida innehåller i nuläget endast komponenten Navigation som innehåller en main och som i sin tur innehåller komponenten Header och en p som meddelar att sign in funktionen kommer bli tillgänglig i framtiden att använda.
 
 ## `Hur startas applicationen`
 
