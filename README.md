@@ -26,6 +26,9 @@ Hur Link ska designas bestäms av vilken sida man befinner sig på i nuläget d�
 #### Navigation
 Navigation är en komponent som bygger upp alla NavigationLink:ar genom att ha informationen till varje i en object-array `UN_AUTH_LINKS, SUPER_ADMIN_LINKS, TEACHER_LINKS eller STUDENT_LINKS` beroende på om man är inloggad och vilken roll man har. Dessa är av typen RouteLink och sparas i en hook `links` för att kunna renderas rätt. `links` lopas igenom med .map och skapar en ny NavigationLink för varje object i arrayen. Det skapas även en `Logout` knapp om användaren är inloggad.
 
+#### Refresher
+Refresher är en komponent som kollar om det är dags att göra en ny JWT-token (och ny Refresh-token) varje gång som användaren går till en ny page. Detta gör den genom utils/api och utils/auth. Om det är första renderingen så pushar vi om sidan för att se till så att navigeringen renderas rätt.
+
 ### `Sidor (pages) i applikationen`
 
 #### Home page (/)
