@@ -86,7 +86,7 @@ Mappen innehåller för tillfället endas page.tsx. Här kommer senare super adm
 
 ## `Hur startas applicationen`
 
-### Backend (BadgemaniaAPI)
+### `Backend (BadgemaniaAPI)`
 1. För att kunna köra backenden så öppnar man först projektet med sln-filen Badgemania.sln.
 2. Eftersom projektet använder SQL Server så behöver man första gången gå in i appsettings.json och byta namn till sitt egna servernamn.
 3. När det är gjort så behöver man gå till Package Manager Console och skriva in Update-Database.
@@ -96,9 +96,10 @@ Mappen innehåller för tillfället endas page.tsx. Här kommer senare super adm
 7. I nuläget har jag inte fixat så clienten kan registrera användare men man kan enkelt göra det i Swagger med mina /api/Auth/Register... endpoints. Är man inloggad som super admin så kan man skapa schools och sedan skapa school admins till dessa. Är man inloggad som school admin så kan man skapa teachers och students till skolan som den skoladminen är kopplad till.
 8. Som du kommer se så har jag byggt många fler endpoints än vad som i nuläget används av clienten, men dessa kommer så klart i framtiden att användas och fler läggs till då det behövs men alla som finns fungerar i Swagger om du vill testa dem.
 
-### Frontend (BadgemaniaClient)
+### `Frontend (BadgemaniaClient)`
 1. Öppna BadgemaniaClient-mappen i vscode.
-2. 
+2. Om det är första gången så går man till terminalen och skriver `npm install` så installeras alla filer som behövs.
+3. När det är klart så skriver man `npm run dev` (se till att det körs på `https://localhost:3000` så backenden accepterar detta.
 
 ## `Reflektion och Analys`
 I denna uppgift valde jag att utmana mig själv ordentligt genom att inte bara jobba i React och Next.JS som vi skulle utan också att använda TypeScript och Tailwindcss. Bara detta gör att jag redan har förbättrat min applikation avsevärt jämfört med om jag enbart hade gjort den med JavaScript och vanlig CSS. TypeScript gör ju att koden typas så att det blir säkrare och enklare att hitta eventuella fel som kan uppstås bland annat. Tailwind har varit riktigt smidigt att använda för styling och jag gillar det mycket jämfört med CSS. Det känns också som att Tailwind påminner till viss del om Bootstrap som jag använt mig av tidigare men ännu bättre vilket så klart är kanon. I mitt arbete så har jag försökt att skapa komponenter då jag upptäkt att jag upprepat mig i koden samt att jag har skapat interface för att typa t.ex. object som ska tas in eller skickas med. Man skulle kunna förbättra applikationen genom att ännu mer se över hierakin av komponenter. Går nog att dela upp i ännu fler steg, men de val som jag har gjort har jag tagit för att jag tycker att det ökar läsbarheten i koden vilket är bra för framtiden och skalbarheten. Jag är nöjd med min kod och design i nuläget om man tänker på den tid som jag haft till mitt förfogande samt att jag utmanade mig själv med TypeScript och Tailwindcss. Vad som självklart kan förbättras i nästa steg för applikationen är att bygga vidare på den med framförallt möjlighet till att kunna logga in som olika sorters användare som student, lärare, skol admin och super admin och att dessa då har olika funktioner som de kan utföra (se min requirements.md för mer information om detta).
