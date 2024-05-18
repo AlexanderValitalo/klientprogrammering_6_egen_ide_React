@@ -33,28 +33,24 @@ So the applikation is bringing gamification to the classroom and the learning pr
 ## Functional Requirements (later in the future to add)
 
 - if teacher is the logged in user
-  - Navigation bar with Home, Badgegroups
-  - Start page (Home page) with a presentation of the product.
-  - Badgegroups page with list of Badgegroups that the teacher has created
-    - Create a new Badgegroup
-    - Badgegroup
+    - BadgegroupId page will show a dashboard of students total earned badges
       - Students
         - Add student to Badgegroup
-        - List of students
         - Delete student from Badgegroup
+      - Badgetypes
+        - Add Badgetype to Badgegroup
+        - List of Badgetypes
+        - Delete Badgetype from Badgegroup
+        - Update Badgetype in Bagegroup 
       - Badges
         - Add Badge to Badgegroup
         - List of Badges
         - Delete Badge from Badgegroup
         - Update Badge in Bagegroup
 - if student is the logged in user
-  - Navigation bar with Home, Badgebag, Badgegroups
-  - Start page (Home page) with a presentation of the product.
-  - Badgebag page with all badges that the student have
   - Badgegroups page with all groups the student belongs to
+  - BadgegroupId page will show a dashboard of all user badges earned and that can be earned
 - if school admin is the logged in user
-  - Navigation bar with Home, students, teachers
-  - Start page (Home page) with a presentation of the product.
   - Student page with list of students in the school
     - Create a student
     - Remove a student
@@ -64,8 +60,6 @@ So the applikation is bringing gamification to the classroom and the learning pr
     - Remove a teacher
     - Update a teacher
 - if super admin is the logged in user
-  - Navigation bar with Home, Schools
-  - Start page (Home page) with a presentation of the product.
   - School page with list of schools in the application
     - Create a school
     - Remove a school
