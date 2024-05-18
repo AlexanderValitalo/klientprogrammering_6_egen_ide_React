@@ -12,6 +12,7 @@
 - I mitt projekt har jag även använt TypeScript för att kunna ha typade variabler och lättare felsökning om något skulle gå fel.
 - I mitt projekt har jag även använt mig utav Tailwindcss för att enklare kunna styla element och komponenter som jag vill, samt för responsiv design.
 - I mitt projekt har jag även använt mig utav EsLint för att hitta fel som kan uppstå i koden.
+- I projektet så använder jag JWT-token som accesstoken och HTTP only Cookie för att kunna refresha accesstoken och för att endast backenden ska kunna komma åt den så det blir säkrare. 
 
 ### `Komponenter som används på flera ställen i min applikation`
 
@@ -20,10 +21,10 @@ Header är en komponent består av en yttre div som innehåller en Image med bad
  
 #### NavigationLink
 NavigationLink är en komponent som består av en Link och en h2 som byggs upp av informationen från link-propen som är av typen NavigationLinkProps, link i sin tur är av typen RouteLink som jag har definierat i en egen fil under mappen interfaces. Denna information kommer ifrån Navigation-komponenten.
-Hur Link ska designas bestäms av vilken sida man befinner sig på i nuläget då den jämför sidans namn med hjälp av usePathname som importeras från next/navigation.
+Hur Link ska designas bestäms av vilken sida man befinner sig på i nuläget då den jämför sidans namn med hjälp av usePathname som importeras från next/navigation samt att den hämtar första delen av pathname om man "dykt" ner djupare i applikationen.
 
 #### Navigation
-Navigation är en komponent som bygger upp alla NavigationLink:ar genom att ha informationen till varje i en object-array `LINKS` av typen RouteLink och propen children som kommer från sidan som använder Navigation komponenten. Object-arrayen `LINKS` lopas igenom med .map och skapar en ny NavigationLink för varje object i LINKS arrayen och när det är klart placeras övriga element och eventuella komponenter ifrån propen children på sidan.
+Navigation är en komponent som bygger upp alla NavigationLink:ar genom att ha informationen till varje i en object-array `UN_AUTH_LINKS, SUPER_ADMIN_LINKS, TEACHER_LINKS eller STUDENT_LINKS` beroende på om man är inloggad och vilken roll man har. Dessa är av typen RouteLink och sparas i en hook `links` för att kunna renderas rätt. `links` lopas igenom med .map och skapar en ny NavigationLink för varje object i arrayen. Det skapas även en `Logout` knapp om användaren är inloggad.
 
 ### `Sidor (pages) i applikationen`
 
